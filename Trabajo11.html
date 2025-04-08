@@ -1,0 +1,57 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+
+    <h1>Formulario de Registro</h1>
+
+    <form action="procesar_formulario.php" method="get">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="50">
+        </div>
+        <br>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" maxlength="50">
+        </div>
+        <br>
+        <div>
+            Sexo:
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="femenino" name="sexo" value="femenino">
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="no_binario" name="sexo" value="no_binario">
+            <label for="no_binario">No binario</label>
+        </div>
+        <br>
+        <div>
+            <label for="estado_civil">Estado Civil:</label>
+            <select id="estado_civil" name="estado_civil">
+                <option value="soltero">Soltero</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="recibir_info" name="recibir_info" value="si" checked>
+            <label for="recibir_info">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="aceptar_condiciones" name="aceptar_condiciones" value="si">
+            <label for="aceptar_condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+        </div>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
